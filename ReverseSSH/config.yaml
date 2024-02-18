@@ -1,6 +1,6 @@
 name: "ReverseSSH"
 description: "ReverseSSH"
-version: "0.0.31"
+version: "0.1.0"
 slug: "reversessh"
 init: false
 advanced: true
