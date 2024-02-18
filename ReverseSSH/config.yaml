@@ -1,0 +1,29 @@
+name: "ReverseSSH"
+description: "ReverseSSH"
+version: "0.0.31"
+slug: "reversessh"
+init: false
+advanced: true
+arch:
+  - aarch64
+  - amd64
+  - armhf
+  - armv7
+  - i386
+schema:
+  localHost: str
+  remoteHost: str
+  remoteUser: str
+  remotePassword: password
+  portPairs:
+    - localPort: int
+      remotePort: int
+  logLevel: list(off|critical|error|warning|notice|info|debug|trace|all)?
+options:
+  localHost: "homeassistant.local"
+  remoteHost: "example.com"
+  remoteUser: "admin"
+  remotePassword: "password"
+  portPairs:
+    - localPort: 22
+      remotePort: 22
