@@ -11,5 +11,7 @@ arch:
   - armv7
   - i386
 schema:
+  localHost: str
   logLevel: list(off|critical|error|warning|notice|info|debug|trace|all)?
 options:
+  localHost: "homeassistant.local"
