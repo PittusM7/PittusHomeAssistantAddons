@@ -2,6 +2,7 @@ ARG BUILD_FROM
 FROM $BUILD_FROM
 
 # setup
+RUN apk update
 RUN apk add apache2
 RUN apk add php
 RUN apk add libapache2-mod-php
