@@ -5,6 +5,7 @@ FROM $BUILD_FROM
 RUN apk update
 RUN apk add apache2
 RUN apk add php
+RUN apk update
 RUN apk add libapache2-mod-php
 RUN apk add php-mysql
 RUN apk add php-intl
