@@ -2,7 +2,17 @@ ARG BUILD_FROM
 FROM $BUILD_FROM
 
 # setup
-RUN apk add apache2 php libapache2-mod-php php-mysql php-intl php-curl php-json php-gd php-xml php-mbstring php-zip
+RUN apk add apache2
+RUN apk add php
+RUN apk add libapache2-mod-php
+RUN apk add php-mysql
+RUN apk add php-intl
+RUN apk add php-curl
+RUN apk add php-json
+RUN apk add php-gd
+RUN apk add php-xml
+RUN apk add php-mbstring
+RUN apk add php-zip
 
 # Copy data for add-on
 COPY run.sh /
