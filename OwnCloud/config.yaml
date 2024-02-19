@@ -1,0 +1,15 @@
+name: "OwnCloud"
+description: "OwnCloud"
+version: "0.1.0"
+slug: "owncloud"
+init: false
+advanced: true
+arch:
+  - aarch64
+  - amd64
+  - armhf
+  - armv7
+  - i386
+schema:
+  logLevel: list(off|critical|error|warning|notice|info|debug|trace|all)?
+options:
