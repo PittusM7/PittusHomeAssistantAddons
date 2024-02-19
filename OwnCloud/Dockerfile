@@ -22,10 +22,11 @@ RUN apk add php-pdo_mysql
 RUN wget https://download.owncloud.com/server/stable/owncloud-complete-latest.tar.bz2
 RUN tar -x -f /owncloud-complete-latest.tar.bz2 -C /var/www
 RUN rm /owncloud-complete-latest.tar.bz2
+COPY files/owncloud.conf /etc/apache2/sites-available/
 
 
 # Copy data for add-on
-COPY run.sh /
+COPY files/run.sh /
 RUN chmod a+x /run.sh
 
 CMD [ "/run.sh" ]
