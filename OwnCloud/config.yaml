@@ -1,9 +1,11 @@
 name: "OwnCloud"
 description: "OwnCloud"
-version: "0.0.9"
+version: "0.0.10"
 slug: "owncloud"
 init: false
 advanced: true
+map:
+  - ssl
 arch:
   - aarch64
   - amd64
