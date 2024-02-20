@@ -8,3 +8,4 @@ RUN rm owncloud-complete-latest.tar.bz2
 
 RUN ln -sf /ssl/fullchain.pem /etc/ssl/certs/ssl-cert-snakeoil.pem
 RUN ln -sf /ssl/privkey.pem /etc/ssl/private/ssl-cert-snakeoil.key
+RUN ln -sf /etc/apache2/sites-available/default-ssl.conf /etc/apache2/sites-enabled/default-ssl.conf
