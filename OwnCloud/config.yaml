@@ -8,7 +8,7 @@ map:
   - ssl
 ports:
   - 443/tcp: 8081
-  - 80/tcp: 8082
+    80/tcp: 8082
 arch:
   - aarch64
   - amd64
