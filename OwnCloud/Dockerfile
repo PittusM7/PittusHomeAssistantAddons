@@ -6,5 +6,7 @@ RUN cp -a /var/www/html/owncloud/. -t /var/www/html
 RUN rm -r /var/www/html/owncloud
 RUN rm owncloud-complete-latest.tar.bz2
 
-COPY /ssl/fullchain.pem /etc/ssl/certs/ssl-cert-snakeoil.pem
-COPY /ssl/privkey.pem /etc/ssl/private/ssl-cert-snakeoil.key
+#COPY /ssl/fullchain.pem /etc/ssl/certs/ssl-cert-snakeoil.pem
+#COPY /ssl/privkey.pem /etc/ssl/private/ssl-cert-snakeoil.key
+RUN ln -sf /ssl/fullchain.pem /etc/ssl/certs/ssl-cert-snakeoil.pem
+RUN ln -sf /ssl/privkey.pem /etc/ssl/private/ssl-cert-snakeoil.key
