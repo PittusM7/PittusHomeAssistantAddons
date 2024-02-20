@@ -1,4 +1,4 @@
-FROM php:apache
+FROM php:7-apache
 
 RUN curl -O https://download.owncloud.com/server/stable/owncloud-complete-latest.tar.bz2
 RUN tar -x -f owncloud-complete-latest.tar.bz2
