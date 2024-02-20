@@ -1,6 +1,6 @@
 name: "OwnCloud"
 description: "OwnCloud"
-version: "0.0.20"
+version: "0.0.21"
 slug: "owncloud"
 init: false
 advanced: true
@@ -8,7 +8,6 @@ map:
   - ssl
 ports:
   443/tcp: 8081
-  80/tcp: 8082
 arch:
   - aarch64
   - amd64
