@@ -1,6 +1,8 @@
 FROM php:7-apache
 
-ADD --chmod=0755 https://github.com/mlocati/docker-php-extension-installer/releases/latest/download/install-php-extensions /usr/bin/
+RUN curl -sSLf -o /usr/bin/install-php-extensions https://github.com/mlocati/docker-php-extension-installer/releases/latest/download/install-php-extensions
+RUN chmod +x /usr/bin/install-php-extensions
+#RUN install-php-extensions gd xdebug
 
 RUN curl -O https://download.owncloud.com/server/stable/owncloud-complete-latest.tar.bz2
 RUN tar -x -f owncloud-complete-latest.tar.bz2
