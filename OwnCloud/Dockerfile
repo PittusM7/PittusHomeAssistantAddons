@@ -14,4 +14,4 @@ RUN ln -sf /ssl/fullchain.pem /etc/ssl/certs/ssl-cert-snakeoil.pem
 RUN ln -sf /ssl/privkey.pem /etc/ssl/private/ssl-cert-snakeoil.key
 
 RUN a2ensite default-ssl
-RUN a2enmod ssl rewrite mime unique_id
+RUN a2enmod ssl rewrite mime unique_id headers
